@@ -42,7 +42,7 @@ export function handler(event, context, callback) {
   console.log(`- hasCartIdCookie? ${hasCartIdCookie.toString()} -`)
 
   // Assemble BC API URL we are going to hit
-  let ROOT_URL = `https://api.integration.zone/stores/${API_STORE_HASH}/v3/`
+  let ROOT_URL = `https://api.bigcommerce.com/stores/${API_STORE_HASH}/v3/`
   let URL = ''
 
   if (ENDPOINT_QUERY_STRING == 'carts/items') {
